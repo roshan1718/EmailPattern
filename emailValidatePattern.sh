@@ -6,7 +6,7 @@ shopt -s extglob
 # @ Version: 18.04.3 lts
 # @ Since: 26 March 2020 
 
-EMAIL_PATTERN="^[a-zA-Z0-9]{1,}([.\_\+\-]?[a-z0-9]{1,})?[@]{1}[a-z0-9]{1,}[.]{1}[a-z]{2,3}([.]?[a-z]{2})?$"
+EMAIL_PATTERN="^[a-zA-Z0-9]{1,}([.\_\+\-]?[a-zA-Z0-9]{1,})?[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]?[a-z]{2})?$"
 
 read -p "Enter Email-id " email
 	if [[ $email =~ $EMAIL_PATTERN ]]; then
