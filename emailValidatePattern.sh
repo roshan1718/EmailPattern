@@ -9,8 +9,8 @@ shopt -s extglob
 EMAIL_PATTERN="^[a-zA-Z0-9]{1,}([.\_\+\-]?[a-zA-Z0-9]{1,})?[@]{1}[a-zA-Z0-9]{1,}[.]{1}[a-zA-Z]{2,3}([.]?[a-z]{2})?$"
 
 read -p "Enter Email-id " email
-	if [[ $email =~ $EMAIL_PATTERN ]]; then
-   	echo Valid Email-Id
-	else
-   	echo Invalid Email-Id
-	fi
+if [[ $email =~ $EMAIL_PATTERN ]]; then
+	echo Valid Email-Id
+else
+	echo Invalid Email-Id
+fi
